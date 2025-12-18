@@ -202,8 +202,8 @@ class LinuxDoBrowser:
     def click_one_topic(self, topic_url):
         new_page = self.browser.new_tab()
         new_page.get(topic_url)
-        if random.random() < 0.3:  # 0.3 * 30 = 9
-            self.click_like(new_page)
+        #if random.random() < 0.3:  # 0.3 * 30 = 9
+        #    self.click_like(new_page)
         self.browse_post(new_page)
         new_page.close()
 
